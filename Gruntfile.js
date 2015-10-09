@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-todo');
 
-	grunt.registerTask('default', ['jst', 'todo']);
+	grunt.registerTask('default', ['jst', 'sass']);
 
 	grunt.event.on('watch', function (action, filepath, target) {
 		grunt.log.writeln(target + ': ' + filepath + ' has ' + action);

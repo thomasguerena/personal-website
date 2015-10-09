@@ -38,7 +38,7 @@ body {
 }
 .body-text {
 	@extend .text;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 24px;
 
 	&.centered { text-align: center; }
@@ -186,9 +186,16 @@ img {
 	.content-box {
 		width: 100%;
 		margin: 23px 0 0 0;
+		padding: 0 24px;
 	}
 	.skills {
 		width: 100%;
 		clear: both;
+	}
+}
+@media (max-width: 500px) {
+	h1 {
+		a { font-size: 40px; }
+		&::after { font-size: 14px }
 	}
 }

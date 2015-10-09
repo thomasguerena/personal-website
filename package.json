@@ -2,6 +2,7 @@
   "name": "thomas-guerena-dot-com",
   "description": "My personal website (thomasguerena.com).",
   "private": true,
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
     "grunt-contrib-jst": "^0.6.0",

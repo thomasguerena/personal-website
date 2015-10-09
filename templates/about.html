@@ -1,0 +1,72 @@
+<p class="body-text">Hello! I'm a Portland-based software engineer specializing in web technologies. Please take a look at my previous projects, and feel free to contact me.</p>
+<h2 class="body-text sub-heading">Background</h2>
+<p class="body-text">I'm from the Oregon Coast, born and raised on Cascade Head. <a href="https://www.google.com/search?q=cascade+head&espv=2&biw=1439&bih=801&source=lnms&tbm=isch&sa=X&ved=0CAcQ_AUoAmoVChMI9dmMu4_kxwIVCUWICh0KkAC5" target="_blank">It's nice there</a>. I grew up playing computer games, but didn't touch a line of code until my sophomore year of college. A friend recommended I take an intro C++ course for fun, and three months later I changed my major from sociology to computer science. Eventually, I added a minor in mathematics (because it's awesome). Having absolutely no background in math or computer science, I had a lot of catching up to do. Luckily, I didn't just enjoy it, I was good at it and the rest of college was fun and rewarding.</p>
+<p class="body-text">In the summer of 2012, I took an internship at Vernier Software. This was my first industry experience and I feel very fortunate to have worked with such an awesome group of engineers. I talk more about that experience <a href="#work/vernier-software">here</a>. Since then, I've had consistent work building software on <a href="#work">various projects</a>.</p>
+<h2 class="body-text sub-heading">Education</h2>
+<p class="body-text">Portland State University (2015)</p>
+<p class="body-text">Major: Computer Science</p>
+<p class="body-text">Minor: Mathematics</p>
+<h2 class="body-text sub-heading">Abilities</h2>
+<p class="body-text subtle-text">0 = no experience</p>
+<p class="body-text subtle-text">5 = comfortable in a professional setting</p>
+<%
+var skills = _.sortBy([
+	{ name: 'Javascript', rating: 5 },
+	{ name: 'HTML5', rating: 5 },
+	{ name: 'CSS3', rating: 5 },
+	{ name: 'SASS/SCSS', rating: 5 },
+	{ name: 'jQuery', rating: 5 },
+	{ name: 'Underscore/Lodash', rating: 5 },
+	{ name: 'Backbone', rating: 5 },
+	{ name: 'Nodejs', rating: 4 },
+	{ name: 'Express', rating: 4 },
+	{ name: 'Socket IO', rating: 4 },
+	{ name: 'UI/UX Design', rating: 3.5 },
+	{ name: 'C/C++', rating: 3.5 },
+	{ name: 'SQL', rating: 4 },
+	{ name: 'Mongodb', rating: 3 },
+	{ name: 'Java', rating: 3 },
+	{ name: 'Python', rating: 3 },
+	{ name: 'Shell Script' , rating: 4 },
+	{ name: 'Qunit', rating: 4.5 },
+	{ name: 'Jasmine/Mocha/Chai', rating: 4 }
+], function (skill) {
+	return -skill.rating;
+});
+
+var tools = _.sortBy([
+	{ name: 'git', rating: 5 },
+	{ name: 'svn', rating: 3.5 },
+	{ name: 'npm', rating: 5 },
+	{ name: 'bower', rating: 5 },
+	{ name: 'grunt', rating: 5 },
+	{ name: 'yeoman', rating: 4 }
+], function (tool) {
+	return -tool.rating;
+});
+
+function renderSkill (skill) { %>
+	<li>
+		<%= skill.name %>
+		<span class="skill-level">
+			<% for (var i = 0; i < Math.floor(skill.rating); ++i) { %>
+				<i class="fa fa-star"></i>
+			<% } %>
+			<% if (skill.rating > i) { ++i; %>
+				<i class="fa fa-star-half-o"></i>
+			<% } %>
+			<% for (i; i < 5; ++i) { %>
+				<i class="fa fa-star-o"></i>
+			<% } %>
+		</span>
+	</li>
+<% } %>
+<ul class="skills">
+	<h2 class="body-text sub-heading">Skills</h2>
+	<% _.each(skills, renderSkill); %>
+</ul>
+<ul class="skills">
+	<h2 class="body-text sub-heading">Tools</h2>
+	<% _.each(tools, renderSkill); %>
+</ul>
+<p class="body-text footnote clear"><i class="fa fa-linkedin-square"></i>See my other qualifications on <a href="https://www.linkedin.com/in/thomasguerena" target="_blank">LinkedIn</a></p>

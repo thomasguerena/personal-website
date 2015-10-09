@@ -1,0 +1,8 @@
+{
+  "name": "thomasguerena.com client",
+  "description": "A personal website including portfolio and interactive chat game",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}

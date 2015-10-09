@@ -1,0 +1,22 @@
+// Does not support multiple properties.
+@mixin singletrans ($prop, $dur, $anim) {
+	-webkit-transition: $prop $dur, $anim;
+	-moz-transition: $prop $dur, $anim;
+	-ms-transition: $prop $dur, $anim;
+	-o-transition: $prop $dur, $anim;
+	transition: $prop $dur, $anim;
+}
+
+// Supports multiple property transitions.
+// @param {sass list} $prop-list Must be a comma seperated list of
+// white-space separated pairs. The first element of each pair is
+// a css property name. The second is a transition duration for that
+// property.
+// e.g.  $proplist: (opacity 10ms, color 50ms, transform 300ms)
+@mixin multitrans ($prop-list, $anim) {
+	-webkit-transition: $prop-list, $anim;
+	-moz-transition: $prop-list, $anim;
+	-ms-transition: $prop-list, $anim;
+	-o-transition: $prop-list, $anim;
+	transition: $prop-list, $anim;
+}

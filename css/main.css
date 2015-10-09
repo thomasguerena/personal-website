@@ -1,0 +1,175 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: MontserratBold;
+  src: url(../fonts/Montserrat-Bold.ttf); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/* COLORS */
+/* ANIMATIONS */
+body {
+  overflow: hidden;
+  background: #FCFEFB; }
+  body > * {
+    opacity: 0;
+    -webkit-transition: opacity 10ms, cubic-bezier(0, 0, 0.25, 1);
+    -moz-transition: opacity 10ms, cubic-bezier(0, 0, 0.25, 1);
+    -ms-transition: opacity 10ms, cubic-bezier(0, 0, 0.25, 1);
+    -o-transition: opacity 10ms, cubic-bezier(0, 0, 0.25, 1);
+    transition: opacity 10ms, cubic-bezier(0, 0, 0.25, 1); }
+  body.loaded > * {
+    opacity: 1; }
+  body .content-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 86px; }
+
+.text, .body-text, h1, h1 a, nav, .content-box *:not(.fa):not(a) {
+  font-family: Montserrat, helvetica, san-serif;
+  color: #2D2D2D; }
+
+.body-text {
+  font-size: 18px;
+  line-height: 24px; }
+  .body-text.centered {
+    text-align: center; }
+
+.heading-text {
+  text-align: center; }
+
+.subtle-text {
+  font-size: 16px;
+  font-style: italic; }
+
+.footnote {
+  margin-top: 50px;
+  text-align: center; }
+
+.footnote.clear {
+  clear: both;
+  padding-top: 40px; }
+
+.footnote .fa {
+  font-size: 30px;
+  margin-right: 24px;
+  vertical-align: sub; }
+
+p.heading-text {
+  font-size: 18px;
+  margin: 6px 0; }
+
+h1 {
+  height: 90px;
+  width: 100%;
+  margin: 150px 0 0 0;
+  text-align: center; }
+  h1 a {
+    font-size: 50px; }
+  h1:after {
+    content: "\A a software developer living in portland, oregon";
+    font-size: 16px;
+    white-space: pre;
+    vertical-align: top; }
+
+h2.heading-text {
+  font-size: 30px;
+  margin: 12px 0 6px 0; }
+h2.sub-heading {
+  font-size: 22px;
+  margin: 24px 0 12px; }
+
+a {
+  color: #ED5953; }
+
+nav {
+  width: 100%;
+  margin: 18px 0 0 0;
+  text-align: center; }
+  nav a {
+    display: inline-block;
+    min-width: 100px;
+    padding: 5px;
+    margin: 5px;
+    color: #FCFEFB;
+    font-size: 18px;
+    border-radius: 2px;
+    border: solid 4px #2D2D2D;
+    text-align: center;
+    background: #2D2D2D; }
+    nav a.active {
+      color: #2D2D2D;
+      background: transparent; }
+    nav a .fa {
+      margin-right: 7px; }
+
+img {
+  width: 100%;
+  margin: 40px 0 0 0;
+  border: 4px solid #2D2D2D; }
+  img:last-of-type {
+    margin-bottom: 40px; }
+
+.button3d {
+  cursor: pointer;
+  -webkit-transition: margin 100ms, box-shadow 100ms, cubic-bezier(0, 0, 0.25, 1);
+  -moz-transition: margin 100ms, box-shadow 100ms, cubic-bezier(0, 0, 0.25, 1);
+  -ms-transition: margin 100ms, box-shadow 100ms, cubic-bezier(0, 0, 0.25, 1);
+  -o-transition: margin 100ms, box-shadow 100ms, cubic-bezier(0, 0, 0.25, 1);
+  transition: margin 100ms, box-shadow 100ms, cubic-bezier(0, 0, 0.25, 1); }
+  .button3d:hover {
+    margin: -4px 0 0 -4px;
+    box-shadow: 3px 3px 0px 0px #666666; }
+
+.content-box {
+  display: block;
+  width: 800px;
+  margin: 23px 0 0 calc(50% - 400px);
+  padding: 0 48px; }
+
+.work-experience:not(:last-child) {
+  margin-bottom: 40px; }
+.work-experience .year,
+.work-experience .project-name {
+  margin-right: 30px; }
+.work-experience .project-name {
+  font-style: italic; }
+.work-experience .job-title {
+  float: right; }
+.work-experience .job-description a {
+  float: right; }
+
+.skills {
+  float: left;
+  width: 50%;
+  list-style: none;
+  padding: 0 12px; }
+  .skills .skill-level {
+    float: right; }
+
+@media (max-width: 800px) {
+  .content-box {
+    width: 100%;
+    margin: 23px 0 0 0; }
+
+  .skills {
+    width: 100%;
+    clear: both; } }
+
+/*# sourceMappingURL=main.css.map */

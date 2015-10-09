@@ -1,0 +1,188 @@
+/* purple: #CC7AAC */
+/* coral: #FE9A8B */
+/* light blue: #90CACE */
+/* dark blue: #597D7F */
+/* black: #333333 */
+
+/*@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: MontserratBold;
+	src: url(../fonts/Montserrat-Bold.ttf);
+}*/
+/** {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: helvetica;
+}
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background: #90CACE;
+}*/
+/*body > * {
+	opacity: 0;
+	transition: opacity 100ms, cubic-bezier(0, 0, 0.25, 1);
+}*/
+/*body.loaded > * { opacity: 1; }*/
+/*ol { list-style: none; }*/
+/*h1 {
+	height: 90px;
+	width: 100%;
+	margin: 150px 0 0 0;
+	text-align: center;
+}
+h1, h1 a {
+	font-family: Montserrat;
+	font-size: 50px;
+	color: white;
+	text-decoration: none;
+}*/
+/*h1:after {
+	content: "\A a software developer living in portland, oregon";
+	font-size: 16px;
+	white-space: pre;
+	vertical-align: top;
+}
+a {
+	font-family: Montserrat;
+	text-decoration: none;
+	color: #597D7F;
+}*/
+/*nav {
+	width: 100%;
+	margin: 18px 0 0 0;
+	text-align: center;
+}
+nav a {
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+	color: #90CACE;
+	font-size: 18px;
+	font-family: Montserrat;
+	border-radius: 2px;
+	border: solid 4px white;
+	text-decoration: none;
+	text-align: center;
+	background: white;
+}
+nav a[force-width] {
+	width: 100px;
+}
+nav a.active {
+	color: white;
+	background: transparent;
+}*/
+/*nav a .fa { margin-right: 7px; }*/
+/*input {
+	color: white;
+	outline: none;
+	font-size: 18px;
+	background: transparent;
+	font-family: Montserrat;
+}*/
+/*button {
+	color: #90CACE;
+	outline: none;
+	cursor: pointer;
+	background: white;
+	font-family: Montserrat;
+}*/
+/*.content-wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	padding-bottom: 86px;
+}*/
+/*.button3d {
+	cursor: pointer;
+	transition: margin 100ms, box-shadow 100ms, cubic-bezier(0, 0, 0.25, 1);
+}
+.button3d:hover {
+	margin: -4px 0 0 -4px;
+	box-shadow: 3px 3px 0px 0px #666666;
+}*/
+
+/* -- RESUME -- */
+/*#content-box {
+	display: block;
+	width: 800px;
+	margin: 23px 0 0 calc(50% - 400px);
+	padding: 0 48px;
+}
+#content-box *:not(.fa):not(a) {
+	font-family: Montserrat;
+	color: white;
+}*/
+/*.body-text {
+	font-family: Montserrat;
+	color: white;
+	font-size: 18px;
+	line-height: 24px;
+}
+.body-text.centered { text-align: center; }*/
+/*.heading-text { text-align: center; }
+p.heading-text {
+	font-size: 18px;
+	margin: 6px 0;
+}
+h2.heading-text {
+	font-size: 30px;
+	margin: 12px 0 6px 0;
+}
+h2.sub-heading {
+	font-size: 22px;
+	margin: 24px 0 12px;
+}
+.subtle-text {
+	font-size: 16px;
+	font-style: italic;
+}
+.footnote {
+	margin-top: 50px;
+	text-align: center;
+}
+.footnote.clear {
+	clear: both;
+	padding-top: 40px;
+}
+.footnote .fa {
+	font-size: 30px;
+	margin-right: 24px;
+	vertical-align: sub;
+}
+.work-experience:not(:last-child) {
+	margin-bottom: 40px;
+}
+.year,
+.project-name { margin-right: 30px; }
+.project-name { font-style: italic; }
+.job-title { float: right; }
+.job-description a { float: right; }
+.skills {
+	float: left;
+	width: 50%;
+	list-style: none;
+	padding: 0 12px;
+}
+.skill-level {
+	float: right;
+}
+
+@media (max-width: 800px) {
+	#content-box {
+		width: 100%;
+		margin: 23px 0 0 0;
+	}
+	.skills {
+		width: 100%;
+		clear: both;
+	}
+}*/

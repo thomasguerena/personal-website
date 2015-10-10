@@ -214,3 +214,25 @@ img {
 		.job-description a { clear: both; }
 	}
 }
+@media (max-width: 320px) {
+	h1 {
+		height: 70px;
+		margin-top: 50px;
+
+		a { font-size: 32px; }
+		&::after { content: "\A a software developer in portland"; }
+	}
+	nav {
+		a {
+			min-width: 80px;
+			font-size: 14px;
+
+			.fa { margin-right: 7px; }
+		}
+	}
+	.body-text { font-size: 14px; }
+	.skills { font-size: 14px; }
+	.work-experience {
+		.job-title { font-size: 12px; }
+	}
+}

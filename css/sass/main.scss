@@ -196,6 +196,9 @@ img {
 @media (max-width: 500px) {
 	h1 {
 		a { font-size: 40px; }
-		&::after { font-size: 14px }
+		&::after {
+			font-size: 14px;
+			content: "\A a software developer from portland, or";
+		}
 	}
 }

@@ -176,6 +176,7 @@ img {
   h1 a {
     font-size: 40px; }
   h1::after {
-    font-size: 14px; } }
+    font-size: 14px;
+    content: "\A a software developer from portland, or"; } }
 
 /*# sourceMappingURL=main.css.map */

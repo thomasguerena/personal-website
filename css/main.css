@@ -145,6 +145,8 @@ img {
 
 .work-experience:not(:last-child) {
   margin-bottom: 40px; }
+.work-experience .body-text span {
+  font-family: MontserratBold, helvetica, san-serif; }
 .work-experience .year,
 .work-experience .project-name {
   margin-right: 30px; }
@@ -177,6 +179,15 @@ img {
     font-size: 40px; }
   h1::after {
     font-size: 14px;
-    content: "\A a software developer from portland, or"; } }
+    content: "\A a software developer from portland, or"; }
+
+  .work-experience .job-title {
+    display: block;
+    float: left;
+    width: 100%; }
+  .work-experience .project-name,
+  .work-experience .job-description,
+  .work-experience .job-description a {
+    clear: both; } }
 
 /*# sourceMappingURL=main.css.map */

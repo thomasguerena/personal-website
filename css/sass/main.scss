@@ -164,6 +164,7 @@ img {
 		margin-bottom: 40px;
 	}
 
+	.body-text span { font-family: $font-bold; }
 	.year,
 	.project-name { margin-right: 30px; }
 	.project-name { font-style: italic; }
@@ -200,5 +201,15 @@ img {
 			font-size: 14px;
 			content: "\A a software developer from portland, or";
 		}
+	}
+	.work-experience {
+		.job-title {
+			display: block;
+			float: left;
+			width: 100%;
+		}
+		.project-name,
+		.job-description,
+		.job-description a { clear: both; }
 	}
 }

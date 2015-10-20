@@ -43,6 +43,10 @@ body {
 	line-height: 24px;
 
 	&.centered { text-align: center; }
+	&.huge {
+		font-size: 48px;
+		margin: 48px;
+	}
 }
 .heading-text { text-align: center; }
 .subtle-text {

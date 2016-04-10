@@ -2,3 +2,4 @@
 .sass-cache
 report.md
 node_modules/*
+templates/templates.js
